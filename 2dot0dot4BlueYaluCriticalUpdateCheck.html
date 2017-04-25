@@ -6,6 +6,11 @@
       document.documentElement.appendChild(alert);
       window.frames[0].window.alert('Version 2.1 has been released. Please update.');
       alert.parentNode.removeChild(alert);
+      var alert1 = document.createElement("IFRAME");
+      alert1.setAttribute("src", 'data:text/plain,');
+      document.documentElement.appendChild(alert1);
+      window.frames[0].window.alert('The Nonce Generator may not work in this version.');
+      alert1.parentNode.removeChild(alert1);
     }
   </script>
 </body>
