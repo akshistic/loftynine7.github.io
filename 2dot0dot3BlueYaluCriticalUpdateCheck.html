@@ -1,3 +1,11 @@
-<script>
-  alert("You aren't on the latest version. Please tap 'Check for Updates' for a guide on how to update.");
-</script>
+<body onload="go();">
+  <script>
+    function go() {
+      var iframe = document.createElement("IFRAME");
+      iframe.setAttribute("src", 'data:text/plain,');
+      document.documentElement.appendChild(iframe);
+      window.frames[0].window.alert("You aren't on the latest version. Please tap 'Check for Updates' for a guide on how to update.");
+      iframe.parentNode.removeChild(iframe);
+    }
+  </script>
+</body>
