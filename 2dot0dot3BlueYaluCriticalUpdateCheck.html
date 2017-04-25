@@ -1,11 +1,11 @@
 <body onload="go();">
   <script>
     function go() {
-      var iframe = document.createElement("IFRAME");
-      iframe.setAttribute("src", 'data:text/plain,');
-      document.documentElement.appendChild(iframe);
-      window.frames[0].window.alert("You aren't on the latest version. Please tap 'Check for Updates' for a guide on how to update.");
-      iframe.parentNode.removeChild(iframe);
+      var alert = document.createElement("IFRAME");
+      alert.setAttribute("src", 'data:text/plain,');
+      document.documentElement.appendChild(alert);
+      window.frames[0].window.alert('You are not on the latest version. Please tap the Check for Updates button for a guide on how to update.');
+      alert.parentNode.removeChild(alert);
     }
   </script>
 </body>
